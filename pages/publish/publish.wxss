@@ -1,0 +1,22 @@
+.button-sp-area{
+    margin: 0 auto;
+    padding-top: 15px;
+    width: 60%;
+}
+.mini-btn{
+    margin-right: 5px;
+}
+.weui-label{
+    margin-left: 5px;
+}
+.weui-btn{
+  margin: 20px;
+}
+.weui-cell__bd{
+  min-width: 50px;
+}
+.icon{
+     width: 23px;
+     height: 23px;
+     margin: 3px 
+}

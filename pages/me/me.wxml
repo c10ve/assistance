@@ -1,0 +1,42 @@
+<!--logs.wxml-->
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击登陆 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+<view class="page">
+
+    <view class="weui-panel__bd">
+        <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active" bindtap='postuid' data-mark='publish'>
+            <image class="icon" src="../../res/icons/4.png" />
+            <!-- <icon type="success" size="53" style='margin:15px'></icon> -->
+            
+            <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                <view class="weui-media-box__title" >我发布的</view>
+                <!-- <view class="weui-cell__ft weui-cell__ft_in-access"></view> -->
+                <!-- <view class="weui-media-box__desc"></view> -->
+            </view>
+        </navigator>
+
+        <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active" bindtap='postuid' data-mark='participate'>
+            <image class="icon" src="../../res/icons/4.png" />
+            <!-- <icon type="success" size="53" style='margin:15px'></icon> -->
+            <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                <view class="weui-media-box__title">我参与的</view>
+                <!-- <view class="weui-cell__ft weui-cell__ft_in-access"></view> -->
+            </view>
+        </navigator> 
+
+        <navigator url="../about/about" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+            <image class="icon"  src="../../res/icons/12.png" />
+            <!-- <icon type="warn" size="53" style='margin:15px'></icon> -->
+            <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                <view class="weui-media-box__title">关于报名助手</view>
+                <!-- <view class="weui-cell__ft weui-cell__ft_in-access"></view> -->
+            </view>
+        </navigator>         
+    </view>
+</view>

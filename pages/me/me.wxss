@@ -1,0 +1,31 @@
+/**logs.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.weui-form-preview{
+    margin-bottom: 25px;
+}
+
+.icon{
+     width: 53px;
+     height: 53px;
+     margin: 10px 
+}

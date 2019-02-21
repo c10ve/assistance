@@ -1,0 +1,41 @@
+/**logs.wxss**/
+page{
+  background-color:#82d471;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: white;
+}
+
+.weui-form-preview{
+    margin-bottom: 25px;
+}
+
+.icon{
+     width: 53px;
+     height: 53px;
+     margin: 10px 
+}
+
+.text{
+     margin: 30px;
+     color: white;
+     font-size: 30
+}
+
+.button{
+     margin: 30px;
+}

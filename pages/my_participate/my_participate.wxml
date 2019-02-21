@@ -1,0 +1,19 @@
+<view class="page">
+
+    <view class="weui-panel__bd">
+        <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active" wx:for="{{my_participate}}" bindtap='postActId' data-actId='{{my_participate[index].actId}}'>
+            <!-- <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                <image class="weui-media-box__thumb" src="../../../res/icons/1.png" />
+            </view> -->
+            <view class="weui-media-box__bd weui-media-box__bd_in-appmsg" >
+                <view class="weui-media-box__title">{{my_participate[index].actName}}</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                <view class="weui-media-box__desc">{{my_participate[index].actIntro}}</view>
+            </view>
+        </navigator>
+       
+    </view>
+</view>
+
+
+

@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/activity/activity",
+    "pages/me/me",
+    "pages/publish/publish",
+    "pages/manage/manage",
+    "pages/map/map",
+    "pages/about/about",
+    "pages/me/my_participate/my_participate",
+    "pages/me/my_publish/my_publish",
+    "pages/activity_detail/activity_detail",
+    "pages/manage_list/manage_list"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "navigationBarTitleText": "活动详情",
+  "usingComponents": {},
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "res/icons/1.png",
+        "iconPath": "res/icons/1.png",
+        "pagePath": "pages/activity/activity",
+        "text": "最新活动"
+      },
+      {
+        "selectedIconPath": "res/icons/1.png",
+        "iconPath": "res/icons/1.png",
+        "pagePath": "pages/publish/publish",
+        "text": "发布活动"
+      },
+      {
+        "selectedIconPath": "res/icons/1.png",
+        "iconPath": "res/icons/1.png",
+        "pagePath": "pages/manage_list/manage_list",
+        "text": "管理活动"
+      },
+      {
+        "selectedIconPath": "res/icons/1.png",
+        "iconPath": "res/icons/1.png",
+        "pagePath": "pages/me/me",
+        "text": "我"
+      }
+    ]
+  }
+}

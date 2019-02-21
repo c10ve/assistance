@@ -1,0 +1,24 @@
+
+ 
+<map id="myMap" 
+     style="width: {{mapWidth}}rpx; height: {{mapHeight}}rpx;" 
+     latitude="{{latitude}}" 
+     longitude="{{longitude}}" 
+     markers="{{markers}}" 
+     show-location 
+     bindmarkertap="selectMarket" 
+     include-points="{{markers}}" 
+     bindmarkertap="toaddress"
+     show-compass
+     >
+     <canvas canvas-id="canvas" class="canvas">
+      <!-- <cover-view class="cover-view">cover-view</cover-view>
+      <cover-view>
+        <cover-view class="cover-view" bindtap="tap1">cover-view</cover-view>
+      </cover-view> -->
+      <cover-view class="image-cnt">
+        <cover-image class="cover-image" bindtap="tap1" src="../../res/icons/me.png" />
+      </cover-view>
+     </canvas>
+</map>
+

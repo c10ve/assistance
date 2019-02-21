@@ -1,0 +1,50 @@
+/**activity.wxss**/
+.searchbar-result{
+    margin-top: 0;
+    font-size: 14px;
+}
+.searchbar-result:before{
+    display: none;
+}
+.weui-cell{
+    padding: 12px 15px 12px 35px;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.weui-form-preview{
+    margin-bottom: 25px;
+}
+
+/* .btn{
+     float: right;
+     width: 40px;
+     height: 40px;
+     opacity: 0;
+} */
+.icon{
+     margin-right: 10px;
+     right: 0;
+     top: 1;
+     width: 30px;
+     height: 30px;
+     position: fixed;
+     z-index: 100
+}

@@ -1,0 +1,22 @@
+/* pages/about/about.wxss */
+page{
+    background-color: #FFFFFF;
+}
+image{
+    margin: 4px 0;
+}
+.page__hd{
+  margin: 20px;
+  border: 1px solid lightblue
+}
+.page__title{
+  text-align: center;
+  margin: 20px;
+  
+}
+.page__desc{
+  font-size: 80%;
+  color: rgb(165, 118, 118);
+  margin: 20px;
+  text-align: center;
+}

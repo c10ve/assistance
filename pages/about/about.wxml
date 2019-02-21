@@ -1,0 +1,7 @@
+<view class="page"> 
+    <view class="page__hd">
+        <view class="page__title">Hust报名助手</view>
+        <view class="page__desc">made by</view>
+        <view class="page__desc">吴景琰、卢任强、高路平、连浩磊、黄奕融</view>
+    </view>
+</view>

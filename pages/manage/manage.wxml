@@ -1,0 +1,71 @@
+<!--index.wxml-->
+<view class="page">  
+  <view class="weui-panel__bd">
+
+        <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+            <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                <view class="weui-media-box__title">
+                    <image class="icon" src="../../res/icons/8.png" />
+                    活动 | {{actName}}
+                </view>
+            </view>
+        </navigator>
+
+        <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+            <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                <view class="weui-media-box__title">
+                    <image class="icon" src="../../res/icons/11.png" />
+                    时间 | {{actPartTime}}
+                </view>
+            </view>
+        </navigator>
+
+        <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+            <view class="weui-cell__hd">
+              <image class="icon" src="../../res/icons/9.png" />
+            </view>
+            <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                <view class="weui-media-box__title">地址 | {{actAddr}}</view>   
+            </view>
+        </navigator> 
+
+        <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+            <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                <view class="weui-media-box__title">
+                    <image class="icon" src="../../res/icons/12.png" />
+                    说明 | {{actIntro}}
+                </view>
+            </view>
+        </navigator>
+
+        <view class="weui-panel">
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text" bindtap='joiner'>
+                    <view class="weui-media-box__title weui-media-box__title_in-text">共{{actNum}}个名额，参加{{joinersNum}}人</view>
+                    <view class="weui-media-box__desc"></view> 
+                    
+                    <view class="joiner" wx:for="{{joinersList}}">   
+                         <image class="joinersList" src="{{joinersList[index].joinerAvatarurl}}" />
+                    <!-- <view class="title">{{joinersList[index].joinerName}}</view> -->
+                    </view>
+                  
+                    
+                    <view class="weui-media-box__info">  
+                         <view class="weui-media-box__info__meta ">发布时间:{{actPublishtime}}</view>
+                         <!-- weui-media-box__info__meta_extra -->
+                        <view class="weui-media-box__info__meta">剩余{{stillNeedNum}}个名额</view>
+                    </view>  
+                </view>  
+            </view>  
+        </view>
+
+  </view>
+
+    <view class="button-sp-area">
+      <button class="weui-btn mini-btn" type="primary" bindtap='beforeUpdate' disabled='{{actOpen}}'>编辑活动</button>
+      <button class="weui-btn max-btn" type="default" bindtap='bindRecruit' disabled='{{actRecruit}}'>招募</button>
+      <button class="weui-btn max-btn" type="warn" bindtap="openCancel" disabled='{{actOpen}}'>取消活动</button>
+    </view>
+
+</view>
+
